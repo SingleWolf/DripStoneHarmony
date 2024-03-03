@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.cer",
+          "storePassword": "0000001B5E9BAF1B68A4FDF88612D15AE046BC37628B4821C2D8B033C0E69977CBD32F91994DA51904BB89",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B32E5721A3DCD17E6833A098C17CBB5E3583F4CC8B77F0460637294FA42468BBFD57CB7E68EC814",
+          "profile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
