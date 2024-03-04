@@ -1,15 +1,13 @@
 /**
- * 首页Tab
+ * 收藏Tab
  */
-import { MyNavigationBar } from '../MyNavigationBar'
-
+import { MyNavigationBar } from '../../common/components/MyNavigationBar'
 @Component
-export struct HomeTab {
-  title: string = "首页"
+export struct CollectTab {
+  title:string="精选"
 
   build() {
     Stack({alignContent:Alignment.TopStart}) {
-
       MyNavigationBar({
         title: this.title,
         isBack: false,
@@ -17,13 +15,14 @@ export struct HomeTab {
         isMenu: false,
         isSearch: false,
         isMore: true
-      })
+      }).align(Alignment.Top)
 
       Text(this.title)
         .width('100%')
         .height('100%')
         .fontColor($r('app.color.black'))
         .textAlign(TextAlign.Center)
+        .align(Alignment.Center)
 
     }.width('100%')
     .height('100%')

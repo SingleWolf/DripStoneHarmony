@@ -13,6 +13,19 @@
           "signAlg": "SHA256withECDSA",
           "storeFile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p12"
         }
+      },
+      {
+        "name": "icbcMate60",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.cer",
+          "storePassword": "0000001BB84B8475D91CFE564B1723BD5119609A24D38AC25DB1225DDB3AFB2B7F18E32330541DE0863D4D",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6BF2AE6A1A9EF49CA495F870E1E16CD7CD089FF0891FB9F8DE1EFFFE291EC122D728F5CC4B987B",
+          "profile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p12"
+        }
       }
     ],
     "compileSdkVersion": 9,

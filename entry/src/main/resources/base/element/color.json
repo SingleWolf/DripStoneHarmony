@@ -1,6 +1,10 @@
 {
   "color": [
     {
+      "name": "theme",
+      "value": "#daa520"
+    },
+    {
       "name": "start_window_background",
       "value": "#FFFFFF"
     },

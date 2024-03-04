@@ -1,9 +1,9 @@
 import { MyBottomTabs } from '../common/components/MyBottomTabs'
 import { MyNavigationBar } from '../common/components/MyNavigationBar'
-import { CollectTab } from '../common/components/tabcontent/CollectTab'
-import { DemoTab } from '../common/components/tabcontent/DemoTab'
-import { HomeTab } from '../common/components/tabcontent/HomeTab'
-import { MineTab } from '../common/components/tabcontent/MineTab'
+import { CollectTab } from '../mode/collect/CollectTab'
+import { DemoTab } from '../mode/demo/DemoTab'
+import { HomeTab } from '../mode/home/HomeTab'
+import { MineTab } from '../mode/mine/MineTab'
 
 @Entry
 @Component

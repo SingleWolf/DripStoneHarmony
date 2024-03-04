@@ -1,7 +1,7 @@
 /**
  * 演练Tab
  */
-import { MyNavigationBar } from '../MyNavigationBar'
+import { MyNavigationBar } from '../../common/components/MyNavigationBar'
 
 @Component
 export struct DemoTab {
