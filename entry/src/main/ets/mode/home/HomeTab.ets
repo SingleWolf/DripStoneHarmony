@@ -3,14 +3,16 @@
  */
 import { MyNavigationBar } from '../../common/components/MyNavigationBar'
 import { HomeTabContent } from './HomeTabContent';
+import { HomeChannel } from './viewmodel/HomeChannel';
+import MockData from './viewmodel/MockData';
 
 @Component
 export struct HomeTab {
   title: string = "首页"
   @State currentIndex: number = 0;
   private controller: TabsController = new TabsController();
-  private channelList: Array<string> = Array.of('学习', 'UI', '优化', '算法', '数据', '排雷', '推荐', '工具');
-  private channelIndex: number[] = [0, 1, 2, 3, 4, 5, 6, 7];
+  private channelIndex:Array<number>=MockData.listHomeChannelIndex();
+  private channelList:HomeChannel[]=MockData.listHomeChanel();
 
   // 顶部的Tab选项的细节部分
   @Builder
@@ -49,8 +51,8 @@ export struct HomeTab {
       Tabs({ barPosition: BarPosition.Start, controller: this.controller }) {
         ForEach(this.channelIndex, pos => {
           TabContent() {
-            HomeTabContent({ currIndex: pos });
-          }.tabBar(this.TabBuilder(pos, this.channelList[pos]))
+            HomeTabContent({ item: this.channelList[pos] });
+          }.tabBar(this.TabBuilder(pos, this.channelList[pos].name))
         })
       }
       .vertical(false)

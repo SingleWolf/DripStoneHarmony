@@ -11,7 +11,7 @@ struct Splash {
     ScreenUtil.setScreenSize() // 获取窗口大小的信息合集
     setTimeout(function () {
       hilog.info(0x0000, 'testTag', '%{public}s', 'goto main page after 1s delay');
-      router.pushUrl({ url: 'pages/Main' })
+      router.replaceUrl({ url: 'pages/Main' })
     }, 1000);
   }
 
