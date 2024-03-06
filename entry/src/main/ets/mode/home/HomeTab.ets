@@ -11,8 +11,7 @@ export struct HomeTab {
   title: string = "首页"
   @State currentIndex: number = 0;
   private controller: TabsController = new TabsController();
-  private channelIndex:Array<number>=MockData.listHomeChannelIndex();
-  private channelList:HomeChannel[]=MockData.listHomeChanel();
+  private channelList: HomeChannel[] = MockData.listHomeChanel();
 
   // 顶部的Tab选项的细节部分
   @Builder
@@ -23,7 +22,7 @@ export struct HomeTab {
         .fontSize(this.currentIndex === index ? '18fp' : '14fp')
         .fontWeight(this.currentIndex === index ? 600 : 400)
         .lineHeight(22)
-        .margin({
+        .padding({
           top: 13,
           bottom: 12
         })
@@ -49,11 +48,11 @@ export struct HomeTab {
       })
 
       Tabs({ barPosition: BarPosition.Start, controller: this.controller }) {
-        ForEach(this.channelIndex, pos => {
+        ForEach(this.channelList, (item: HomeChannel, index: number) => {
           TabContent() {
-            HomeTabContent({ item: this.channelList[pos] });
-          }.tabBar(this.TabBuilder(pos, this.channelList[pos].name))
-        })
+            HomeTabContent({ channel: item })
+          }.tabBar(this.TabBuilder(index, item.name))
+        }, (item: HomeChannel) => JSON.stringify(item))
       }
       .vertical(false)
       .barMode(BarMode.Fixed)
@@ -66,6 +65,6 @@ export struct HomeTab {
     }
     .width('100%')
     .height('100%')
-    .backgroundColor(Color.Pink) //背景颜色
+    .backgroundColor($r('app.color.grey2')) //背景颜色
   }
 }
