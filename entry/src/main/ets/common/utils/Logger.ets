@@ -34,4 +34,4 @@ class Logger {
   }
 }
 
-export default new Logger('VideoPlayer', 0xFF00)
+export default new Logger('DripStone', 0xFF00)

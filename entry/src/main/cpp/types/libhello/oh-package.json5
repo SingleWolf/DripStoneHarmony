@@ -1,0 +1,6 @@
+{
+    "name": "libhello.so",
+    "types": './index.d.ts',
+    'version': "",
+    'description': "我要把 libhello.so 与 index.d.ts 进行结合关联起来。从调试看，c/c++文件只能放在./src/main/cpp目录下"
+}

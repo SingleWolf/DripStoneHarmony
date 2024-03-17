@@ -1,39 +1,26 @@
 {
   "app": {
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default"
+      }
+    ],
     "signingConfigs": [
       {
         "name": "default",
         "type": "HarmonyOS",
         "material": {
           "certpath": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.cer",
-          "storePassword": "0000001B5E9BAF1B68A4FDF88612D15AE046BC37628B4821C2D8B033C0E69977CBD32F91994DA51904BB89",
+          "storePassword": "0000001BF3F5AD9ADD8CDF6B0C1D7DACAF3161564FD6BDA92D6C5EC477B5D3A730D90C4AD7854696F83E17",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B32E5721A3DCD17E6833A098C17CBB5E3583F4CC8B77F0460637294FA42468BBFD57CB7E68EC814",
+          "keyPassword": "0000001BB01BA9B1BEFCD417078030594677237C58A963869F7A940A949208ADC13CBA8AA76531E8599C8C",
           "profile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p12"
         }
-      },
-      {
-        "name": "icbcMate60",
-        "type": "HarmonyOS",
-        "material": {
-          "certpath": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.cer",
-          "storePassword": "0000001BB84B8475D91CFE564B1723BD5119609A24D38AC25DB1225DDB3AFB2B7F18E32330541DE0863D4D",
-          "keyAlias": "debugKey",
-          "keyPassword": "0000001B6BF2AE6A1A9EF49CA495F870E1E16CD7CD089FF0891FB9F8DE1EFFFE291EC122D728F5CC4B987B",
-          "profile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p7b",
-          "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/walker/.ohos/config/auto_debug_DripStone_com.walker.dripstone_80086000146877512.p12"
-        }
-      }
-    ],
-    "compileSdkVersion": 9,
-    "compatibleSdkVersion": 9,
-    "products": [
-      {
-        "name": "default",
-        "signingConfig": "default",
       }
     ]
   },
