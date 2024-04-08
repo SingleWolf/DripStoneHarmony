@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/Splash",
     "pages/Main",
-    "mode/home/group/study/native/Ark2CppPage"
+    "mode/home/group/study/native/Ark2CppPage",
+    "mode/note/page/NotePage"
   ]
 }

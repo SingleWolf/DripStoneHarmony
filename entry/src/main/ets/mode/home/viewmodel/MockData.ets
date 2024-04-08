@@ -39,6 +39,10 @@ const HomeChannelList: any[] = [
       {
         "sid": "H01_S02",
         "title": "H5与原生的交互"
+      },
+      {
+        "sid": "H01_S03",
+        "title": "锤子笔记"
       }
     ]
   },

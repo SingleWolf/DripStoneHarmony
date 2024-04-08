@@ -51,6 +51,10 @@ function transactItemClick(item: HomeItem) {
         router.pushUrl({ url: 'mode/home/group/study/native/Ark2CppPage', params: { title: item.title } })
         break;
       }
+      case "H01_S03": {
+        router.pushUrl({ url: 'mode/note/page/NotePage', params: { title: item.title } })
+        break;
+      }
       default: {
         promptAction.showToast({
           message: "click:" + item.title,
